@@ -24,8 +24,8 @@ class FavMov extends Component {
 
     render(){
         return (
-            <div>
-                <h3>{this.props.movie.title}</h3>
+            <div className='ind-fav'>
+                <h2>{this.props.movie.title}</h2>
                 {this.state.isEditing
                 ? (
                     <div>
@@ -37,7 +37,7 @@ class FavMov extends Component {
                 )
                 : (
                     <div>
-                        <h5>{this.props.movie.rating}/10</h5>
+                        <h3>{this.props.movie.rating}/10</h3>
                         <button onClick={this.handleToggle}>Change Rating</button>
                     </div>
                 )}

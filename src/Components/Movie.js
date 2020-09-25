@@ -13,9 +13,9 @@ class Movie extends Component {
 
     render(){
         return(
-            <div onClick={this.handleFav}>
-                <h3>{this.props.movie.title}</h3>
-                <h5>{this.props.movie.rating}/10</h5>
+            <div className='ind-mov' onClick={this.handleFav}>
+                <h2>{this.props.movie.title}</h2>
+                <h3>{this.props.movie.rating}/10</h3>
             </div>
         )
     }
