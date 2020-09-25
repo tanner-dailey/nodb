@@ -15,6 +15,8 @@ class App extends Component {
   }
 
   componentDidMount(){
+    document.title = 'Watchlist';
+    
     axios.get('/api/favMovies')
     .then(res => {
       this.setState({favMovies: res.data})
