@@ -26,6 +26,8 @@ class FavMov extends Component {
         return (
             <div className='ind-fav'>
                 <h2>{this.props.movie.title}</h2>
+                <br />
+                <div className='mov-info'>
                 {this.state.isEditing
                 ? (
                     <div>
@@ -42,6 +44,7 @@ class FavMov extends Component {
                     </div>
                 )}
                 <button onClick={() => this.props.removeFn(this.props.movie.id)}>Remove</button>
+                </div>
             </div>
         )
     }
