@@ -30,7 +30,7 @@ class FavMov extends Component {
                 <div className='mov-info'>
                 {this.state.isEditing
                 ? (
-                    <div className='custom-select'>
+                    <div>
                         <select onChange={e => this.handleRating(e.target.value)}>
                             <option value="" disabled selected>Select Rating</option>
                             <option value="0">0</option>
