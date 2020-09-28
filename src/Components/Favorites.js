@@ -12,7 +12,7 @@ const Favorites = props => {
 
     return (
         <div>
-            <h1>Favorites</h1>
+            <h1>Top 5 Favorites</h1>
             <div className='fav-flex'>
                 {mappedMovies}
             </div>

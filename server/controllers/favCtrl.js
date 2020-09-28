@@ -11,8 +11,10 @@ module.exports = {
         movie.id = id;
         id++;
 
-        favMovies.push(movie);
-        res.status(200).send(favMovies);
+        if(favMovies.length <= 4){
+            favMovies.push(movie);
+            res.status(200).send(favMovies);
+        }
     },
     changeRating: (req, res) => {
         const {id} = req.params;
