@@ -71,6 +71,10 @@ h1 {
       border-radius: 10px;
   }
 
+  .custom-select  select {
+    
+  }
+
   @media (min-width: 1140px) {
     .mov-flex {
         width: 100%;
